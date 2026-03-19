@@ -1,7 +1,6 @@
-[package]
-name = "tic-tac-tui"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["programs/tic-tac-tui", "client"]
+resolver = "2"
 
-[dependencies]
-anchor-lang = "0.32.1"
+[profile.release]
+overflow-checks = true
